@@ -7,6 +7,8 @@
 """
 from unittest import result
 
+from HMSession.Day04 import common
+
 # 定义函数
 """
 语法格式：def函数名():
@@ -116,3 +118,53 @@ from unittest import result
 # if __name__ == "__main__":
 #     print("入口")
 
+# info_list = [{'name': 'mike', 'pwd': '123321'}, {'name': 'rock', 'pwd': 'abccba'}, {'name':'tom', 'pwd':'h321'}]
+# 遍历列表，打印信息，打印格式如下：
+# 用户名为：mike, 密码为：123321
+# 用户名为：rock, 密码为：abccba
+# 用户名为：tom, 密码为：h321
+# info_list = [
+#     {'name': 'mike', 'pwd': '123321'},
+#     {'name': 'rock', 'pwd': 'abccba'},
+#     {'name':'tom', 'pwd':'h321'}
+# ]
+# for item in info_list:
+#     print(f"用户名为：{item['name']},密码为：{item['pwd']}")
+
+# 需求：封装一个函数，统计形参str_data中有几个空格' '
+# 1. 统计的空格数需要返回
+# 2. 调用函数，测试函数的调用情况
+# def sapce_data(str_data):
+#     i = 0
+#     for n in str_data:
+#         if str(n) == " ":
+#             i += 1
+#             print(i)
+#     return str_data
+# print(sapce_data("a   b  ssg gss     s"))
+
+# 需求：封装一个函数，判断year是不是润年
+# 1. year是形参
+# 2. 闰年判断程序(闰年是能被4整除，但不能被100整除的；或者能被400整除的年份)
+# 3. 如果是闰年返回True，如果不是返回False
+# 4. 调用函数，测试函数的调用情况
+# def year_runnian(year):
+#     if year % 4 == 0 and year % 100 !=0 or year % 400 == 0:
+#         return True
+#     else:
+#         return  False
+# print(year_runnian(2001))
+
+# 需求:
+# 1. 定义一个函数 sum_numbers， 可以接收的 任意多个整数
+# 2. 功能要求： 将传递的 所有数字累加 并且返回累加结果
+# *args可以接受任意多的参数，并将其打包为一个元组传入函数内部进行计算
+# def sum_numbers(*args):
+#     # 定义变量num用于存放求和结果
+#     num = 0
+#     # args是一个元组，那就可以通过循环的方式遍历其中的每一个元素，
+#     # 通过将每个元素与上一步得到的sum_相加就可以得到所有参数的求和结果
+#     for i in args:
+#         num += i
+#     return num
+# print(sum_numbers(1,22,2))
