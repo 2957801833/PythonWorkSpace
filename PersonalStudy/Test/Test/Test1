@@ -1,0 +1,21 @@
+#基础程序编写与执行
+
+print("Welcome to python!")
+print("Python is fun!")
+print("Problem Driven")
+print()
+
+print( ( 10.5 + 3*2 ) / ( 45 - 3.5 ) )
+print( ( 3.5 * 4 ) / ( 2 - 2.5 ) )
+print()
+
+#运行时错误（整数除法除数为0）
+#print(1/0)
+print()
+
+#将华氏温度35转换为摄氏温度
+print("35为华氏温度")
+print("转换为摄氏度后：")
+print(( 5 / 9 * ( 35 - 32 )) )
+print()
+
