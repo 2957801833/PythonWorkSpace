@@ -95,10 +95,24 @@ from unittest import result
 #         print("登陆失败!")
 # login()
 
-import  random
-random.randint(1,10)
+# import  random
+# random.randint(1,10)
+#
+# import  common
+# result = common.get_2_sum(1,1)
+# print(result)
+# print(common.num)
 
-import  common
-result = common.get_2_sum(1,1)
-print(result)
-print(common.num)
+# from common import get_2_sum
+# r = get_2_sum(2,2)
+# print(r)
+#
+# from common import get_2_sum as aaa
+# print(aaa(1,3))
+
+# print(__name__)
+# if True:
+#     print("aaaa")
+# if __name__ == "__main__":
+#     print("入口")
+
